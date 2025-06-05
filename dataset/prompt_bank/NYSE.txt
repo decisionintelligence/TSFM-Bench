@@ -1,0 +1,1 @@
+Records opening price, closing price, trading volume, lowest price, and highest price.

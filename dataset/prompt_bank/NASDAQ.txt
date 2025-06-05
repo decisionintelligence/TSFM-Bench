@@ -1,0 +1,2 @@
+The NASDAQ dataset is a collection of records opening price, closing price, trading volume, lowest price, and highest price.
+

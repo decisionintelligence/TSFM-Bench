@@ -1,8 +1,8 @@
-# FM4TS-Bench: COMPREHENSIVE AND UNIFIED BENCHMARKING OF FOUNDATION MODELS FOR TIME SERIES FORECASTING
+# TSFM-Bench: A COMPREHENSIVE AND UNIFIED BENCHMARKING OF FOUNDATION MODELS FOR TIME SERIES FORECASTING
 
 ## Introduction
 
-FM4TS-Bench is a new benchmark designed to enable thorough and fair evaluation and comparison of foundation models, including those based on large language models and time series pretraining. It supports various forecasting strategies, such as zero-shot, few-shot, and full-shot learning. Additionally, FM4TS-Bench provides a standardized pipeline for evaluation processes like dataset splitting, loading, normalization, and few-shot sampling, ensuring consistent and fair assessments across models.
+Time Series Forecasting (TSF) is key functionality in numerous fields, such as financial investment, weather services, and energy management. Although increasingly capable TSF methods occur, many of them require domain-specific data collection and model training and do not generalize well when applied in other domains. Time Series Foundation Models (TSFMs) that are pre-trained on massive heterogeneous time series data aim to overcome these limitations. The prospects for generalizability have spurred the development of a new generation of TSFMs. This study proposes a benchmark, fewTSFM-Bench, to facilitate comprehensive and unified evaluation of TSFMs. fewTSFM-Bench covers a wide range of TSFMs, including those based on large language models and those pre-trained on time series data. fewTSFM-Bench supports multiple forecasting scenarios, including zero-shot, few-shot, and full-shot, enabling assessment across the full range of adaptation strategies. fewTSFM-Bench also provides a standardized experimental protocols for critical evaluation processes such as dataset splitting, loading, normalization, and few-shot sampling, facilitating consistency and fairness. We report on an extensive evaluation of TSFMs across a diverse range of datasets spanning multiple domains and exhibiting varied statistical characteristics. Specifically, we identify pros and cons and inherent limitations of existing TSFMs, and we propose potential directions for new model designs. fewTSFM-Bench is available at https://github.com/decisionintelligence/TSFM-Bench.
 
 <div align="center">
 <img src="img/architecture.png" width="75%"/>
@@ -14,14 +14,14 @@ FM4TS-Bench is a new benchmark designed to enable thorough and fair evaluation a
 
 1. Clone repository:
     ```shell
-    git clone https://github.com/lizhez/FM4TS-Bench.git
-    cd FM4TS-Bench
+    git clone git@github.com:decisionintelligence/TSFM-Bench.git
+    cd TSFM-Bench
     ```
 
 2. Create virtual environment
     ```shell
-    conda create -n "FM4TS-Bench" python=3.10
-    conda activate FM4TS-Bench
+    conda create -n "TSFM-Bench" python=3.10
+    conda activate TSFM-Bench
     pip install -r requirements.txt
     ```
 

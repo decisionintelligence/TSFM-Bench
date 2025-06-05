@@ -1,0 +1,2 @@
+The ILI dataset is a collection of recorded indicators of patients data from Centers for Disease Control and Prevention.
+

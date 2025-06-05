@@ -1,0 +1,1 @@
+The Exchange dataset is a collection of the daily exchange rates of eight countries.

@@ -1,0 +1,23 @@
+{
+    "ETTh1": "electricity transformer A data with one hour sample rate.",
+    "ETTh2": "electricity transformer B data with one hour sample rate.",
+    "ETTm1": "electricity transformer A data with fifteen minute sample rate.",
+    "ETTm2": "electricity transformer B data with fifteen minute sample rate.",
+    "Electricity": "power consumption data with hourly sample rate.",
+    "Weather": "meteorological indicator data with ten minute sample rate.",
+    "Exchange": "exchange rate data with one day sample rate.",
+    "ILI": "patient number data with one week sample rate.",
+    "Solar": "solar production records collected from 137 PV plants in Alabama with ten minute sample rate.",
+    "ZafNoo": "from the Sapflux data project includes sap flow measurements and nvironmental variables with thirty minute sample rate.",
+    "NASDAQ": "records opening price, closing price, trading volume, lowest price, and highest price with one day sample rate.",
+    "NN5": "records the daily cash withdrawals from ATMs in UK with one day sample rate.",
+    "Traffic": "road occupancy rates measured by 862 sensors on San Francisco Bay area freeways with one hour sample rate.",
+    "Wike2000": " page views of 2000 Wikipedia pages with one day sample rate.",
+    "AQShunyi": "air quality datasets from a measurement station, over a period of 4 years.",
+    "CzeLan": "from the Sapflux data project includes sap flow measurements and nvironmental variables.",
+    "Wind": "wind power records from 2020-2021 at 15-minute intervals.",
+    "FRED-MD": "time series showing a set of macroeconomic indicators from the Federal Reserve Bank.",
+    "NYSE": "records opening price, closing price, trading volume, lowest price, and highest price.",
+    "Covid-19": "provide opportunities for researchers to investigate the dynamics of COVID-19.",
+    "PEMS08": "traffic flow time series collected from the CalTrans PeMS."
+}
