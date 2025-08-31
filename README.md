@@ -26,7 +26,7 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
     ``` -->
     1. **Download the environment**
 
-        Download the environment from [OneDrive](https://1drv.ms/u/c/801ce36c4ff3f93b/EV1kQRCTRIJKpsVu7EMoaFoBue5vS8120SsCThzIBhnjQA?e=kiuCdq). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+        Download the environment from [Link](https://pan.quark.cn/s/11c498e0ca30#/list/share). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
         ```shell
         mkdir -p my_env
         tar -xzf TSFM-Bench.tar.gz -C my_env
@@ -60,7 +60,7 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
 You can obtained the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1ZrDotV98JWCSfMaQ94XXd6vh0g27GIrB/view?usp=drive_link). Create a separate folder named `./dataset` 
 
 ### Prepaer Checkpoints for Foundation Models
-1. We provide checkpoints for the basic model used in the paper. Please download the checkpoints from [Google Drive](https://drive.google.com/file/d/1M5Opdq--wY6mOjWn6w1_CAOabnY-C_nF/view?usp=sharing).
+1. We provide checkpoints for the basic model used in the paper. Please download the checkpoints from [Link](https://pan.quark.cn/s/42f9e31599c0).
 
 2. You can also download the checkpoints from the following link. Please place the `checkpoint_llm` folder under `./ts_benchmark/baselines/LLM/` and rename it as `checkpoints`. the `checkpoint_pretrain` folder under `./ts_benchmark/baselines/pre_train/` and rename it as `checkpoints`.:
 
