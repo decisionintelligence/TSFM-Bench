@@ -36,14 +36,9 @@ class Timer(nn.Module):
         self.output_patch_len = 96 # fixed by the pre-trained model
         self.label_len = config.seq_len - 96
 
-        # self.model = torch.jit.load("ts_benchmark/baselines/pre_train/checkpoints/timer/Timer_67M_UTSD_4G.pt")
-        # self.model = torch.load("ts_benchmark/baselines/pre_train/checkpoints/timer/Timer_forecast_1.0.ckpt")
         self.model = Model(config)
         self.model.load_state_dict(torch.load("ts_benchmark/baselines/pre_train/checkpoints/timer/checkpoint.pth"))
 
-        if not config.use_p:
-            for param in self.model.parameters():
-                param.data.uniform_(-0.02, 0.02)
      
     def forward(self, inputs, dec_inp, x_mark_enc, x_mark_dec, device=None, num_samples=None):        
         

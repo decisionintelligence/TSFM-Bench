@@ -19,12 +19,42 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
     ```
 
 2. Create virtual environment
-    ```shell
+    <!-- ```shell
     conda create -n "TSFM-Bench" python=3.10
     conda activate TSFM-Bench
     pip install -r requirements.txt
-    ```
+    ``` -->
+    1. **Download the environment**
 
+        Download the environment from [OneDrive](https://1drv.ms/u/c/801ce36c4ff3f93b/EV1kQRCTRIJKpsVu7EMoaFoBue5vS8120SsCThzIBhnjQA?e=kiuCdq). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+        ```shell
+        mkdir -p my_env
+        tar -xzf TSFM-Bench.tar.gz -C my_env
+        ```
+    2. **Activating the Environment**
+
+        After extraction, you can activate the environment:
+
+        - If you extracted the environment under `conda/envs/`, you can directly use the following command to activate it:
+            ```bash
+            conda activate my_env
+            ```
+        - If you extracted the environment under another directory, you can use the following command to activate it:
+            ```bash
+            conda activate /path/to/my_env
+            ``` 
+    3. **Installing the Requirements**
+
+        After activation, you can install the requirements:
+        ```shell
+        pip install -r requirements.txt
+        ```
+    4. **Unpacking the Environment**
+
+        The environment is packed into a single file. To use it, you need to unpack it first. You can unpack the environment using the following command:
+        ```shell
+        (my_env) $ conda-unpack
+        ```
 ### Prepaer Datasets
 
 You can obtained the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1ZrDotV98JWCSfMaQ94XXd6vh0g27GIrB/view?usp=drive_link). Create a separate folder named `./dataset` 
@@ -47,7 +77,7 @@ You can obtained the well pre-processed datasets from [Google Drive](https://dri
 
 3. Some model-specific requirements
 When you want to test the CALF, please refer to the [link](ts_benchmark/baselines/LLM/submodules/CALF/get_woken.ipynb).
-When you want to test the AutoTimes, please refer to the [link](ts_benchmark/baselines/LLM/submodules/AutoTimes/preprocess.ipynb).
+<!-- When you want to test the AutoTimes, please refer to the [link](ts_benchmark/baselines/LLM/submodules/AutoTimes/preprocess.ipynb). -->
 
 ### Train and evaluate model
 - We provide the experiment scripts for all models under the folder `./scripts`. For example you can reproduce a experiment result as the following:
