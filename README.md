@@ -26,7 +26,7 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
     ``` -->
     1. **Download the environment**
 
-        Download the environment from [Link](https://pan.quark.cn/s/11c498e0ca30#/list/share). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+        Download the environment from [Link](https://pan.quark.cn/s/6a38b4d85e7d). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
         ```shell
         mkdir -p my_env
         tar -xzf TSFM-Bench.tar.gz -C my_env
@@ -43,13 +43,13 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
             ```bash
             conda activate /path/to/my_env
             ``` 
-    3. **Installing the Requirements**
+    <!-- 3. **Installing the Requirements**
 
         After activation, you can install the requirements:
         ```shell
         pip install -r requirements.txt
-        ```
-    4. **Unpacking the Environment**
+        ``` -->
+    3. **Unpacking the Environment**
 
         The environment is packed into a single file. To use it, you need to unpack it first. You can unpack the environment using the following command:
         ```shell
