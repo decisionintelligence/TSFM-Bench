@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Time Series Forecasting (TSF) is key functionality in numerous fields, such as financial investment, weather services, and energy management. Although increasingly capable TSF methods occur, many of them require domain-specific data collection and model training and do not generalize well when applied in other domains. Time Series Foundation Models (TSFMs) that are pre-trained on massive heterogeneous time series data aim to overcome these limitations. The prospects for generalizability have spurred the development of a new generation of TSFMs. This study proposes a benchmark, fewTSFM-Bench, to facilitate comprehensive and unified evaluation of TSFMs. fewTSFM-Bench covers a wide range of TSFMs, including those based on large language models and those pre-trained on time series data. fewTSFM-Bench supports multiple forecasting scenarios, including zero-shot, few-shot, and full-shot, enabling assessment across the full range of adaptation strategies. fewTSFM-Bench also provides a standardized experimental protocols for critical evaluation processes such as dataset splitting, loading, normalization, and few-shot sampling, facilitating consistency and fairness. We report on an extensive evaluation of TSFMs across a diverse range of datasets spanning multiple domains and exhibiting varied statistical characteristics. Specifically, we identify pros and cons and inherent limitations of existing TSFMs, and we propose potential directions for new model designs. fewTSFM-Bench is available at https://github.com/decisionintelligence/TSFM-Bench.
+Time Series Forecasting (TSF) is key functionality in numerous fields, such as financial investment, weather services, and energy management. Although increasingly capable TSF methods occur, many of them require domain-specific data collection and model training and do not generalize well when applied in other domains. Time Series Foundation Models (TSFMs) that are pre-trained on massive heterogeneous time series data aim to overcome these limitations. The prospects for generalizability have spurred the development of a new generation of TSFMs. This study proposes a benchmark, fewTSFM-Bench, to facilitate comprehensive and unified evaluation of TSFMs. fewTSFM-Bench covers a wide range of TSFMs, including those based on large language models and those pre-trained on time series data. fewTSFM-Bench supports multiple forecasting scenarios, including zero-shot, few-shot, and full-shot, enabling assessment across the full range of adaptation strategies. fewTSFM-Bench also provides a standardized experimental protocols for critical evaluation processes such as dataset splitting, loading, normalization, and few-shot sampling, facilitating consistency and fairness. We report on an extensive evaluation of TSFMs across a diverse range of datasets spanning multiple domains and exhibiting varied statistical characteristics. Specifically, we identify pros and cons and inherent limitations of existing TSFMs, and we propose potential directions for new model designs.
 
 <div align="center">
 <img src="img/architecture.png" width="75%"/>
@@ -26,7 +26,7 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
     ``` -->
     1. **Download the environment**
 
-        Download the environment from [Link](https://pan.quark.cn/s/523c804241da). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+        Download the environment from [Link](https://pan.quark.cn/s/3c1d858efac5). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
         ```shell
         mkdir -p my_env
         tar -xzf TSFM-Bench.tar.gz -C my_env
@@ -60,19 +60,18 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
 You can obtained the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1ZrDotV98JWCSfMaQ94XXd6vh0g27GIrB/view?usp=drive_link). Create a separate folder named `./dataset` 
 
 ### Prepaer Checkpoints for Foundation Models
-1. We provide checkpoints for the basic model used in the paper. Please download the checkpoints from [Link](https://pan.quark.cn/s/f7f8b8697335).
 
-2. You can also download the checkpoints from the following link. Please place the `checkpoint_llm` folder under `./ts_benchmark/baselines/LLM/` and rename it as `checkpoints`. the `checkpoint_pretrain` folder under `./ts_benchmark/baselines/pre_train/` and rename it as `checkpoints`.:
+1. You can download the checkpoints from the following link. Please place the `checkpoint_llm` folder under `./ts_benchmark/baselines/LLM/` and rename it as `checkpoints`. the `checkpoint_pretrain` folder under `./ts_benchmark/baselines/pre_train/` and rename it as `checkpoints`.:
 
     | **Model** | **Link** |
     | --- | --- |
     | `Chronos` | [Huggingface](https://huggingface.co/amazon/chronos-bolt-base) |
     | `TimesFM` | [Huggingface](https://huggingface.co/google/timesfm-1.0-200m-pytorch) |
-    | `Timer` | [Google Drive](https://drive.google.com/drive/folders/15oaiAl4OO5gFqZMJD2lOtX2fxHbpgcU8) |
+    <!-- | `Timer` | [Google Drive](https://drive.google.com/drive/folders/15oaiAl4OO5gFqZMJD2lOtX2fxHbpgcU8) | -->
     | `UniTS` | [Github](https://github.com/mims-harvard/UniTS/releases/tag/ckpt) |
-    | `TinyTimeMixer` | [Huggingface](https://huggingface.co/ibm-research/ttm-research-r2) |
+    <!-- | `TinyTimeMixer` | [Huggingface](https://huggingface.co/ibm-research/ttm-research-r2) | -->
     | `Moment` | [Huggingface](https://huggingface.co/AutonLab/MOMENT-1-large) |
-    | `MOIRAI` | [Huggingface](https://huggingface.co/Salesforce/moirai-1.0-R-base) |
+    <!-- | `MOIRAI` | [Huggingface](https://huggingface.co/Salesforce/moirai-1.0-R-base) | -->
     | `GPT-2` | [Huggingface](https://huggingface.co/openai-community/gpt2) |
 
 3. Some model-specific requirements
