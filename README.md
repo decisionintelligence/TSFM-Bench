@@ -43,13 +43,13 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
             ```bash
             conda activate /path/to/my_env
             ``` 
-    3. **Installing the Requirements**
+    <!-- 3. **Installing the Requirements**
 
         After activation, you can install the requirements:
         ```shell
         pip install -r requirements.txt
-        ```
-    4. **Unpacking the Environment**
+        ``` -->
+    3. **Unpacking the Environment**
 
         The environment is packed into a single file. To use it, you need to unpack it first. You can unpack the environment using the following command:
         ```shell
