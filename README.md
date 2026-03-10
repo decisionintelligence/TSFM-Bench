@@ -26,7 +26,7 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
     ``` -->
     1. **Download the environment**
 
-        Download the environment from [Link](https://pan.quark.cn/s/3c1d858efac5). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+        Download the environment from [Google Drive](https://drive.google.com/file/d/1SxS0J2EK8UXPnm1cXP_QHzM4iqduvZKK/view?usp=sharing). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
         ```shell
         mkdir -p my_env
         tar -xzf TSFM-Bench.tar.gz -C my_env
@@ -43,12 +43,6 @@ Time Series Forecasting (TSF) is key functionality in numerous fields, such as f
             ```bash
             conda activate /path/to/my_env
             ``` 
-    <!-- 3. **Installing the Requirements**
-
-        After activation, you can install the requirements:
-        ```shell
-        pip install -r requirements.txt
-        ``` -->
     3. **Unpacking the Environment**
 
         The environment is packed into a single file. To use it, you need to unpack it first. You can unpack the environment using the following command:
@@ -61,17 +55,18 @@ You can obtained the well pre-processed datasets from [Google Drive](https://dri
 
 ### Prepaer Checkpoints for Foundation Models
 
-1. You can download the checkpoints from the following link. Please place the `checkpoint_llm` folder under `./ts_benchmark/baselines/LLM/` and rename it as `checkpoints`. the `checkpoint_pretrain` folder under `./ts_benchmark/baselines/pre_train/` and rename it as `checkpoints`.:
+1. You can download the model checkpoints from the link below. Please place the checkpoints for LLM-based models under `./ts_benchmark/baselines/LLM/checkpoints`, and those for TS pre-trained models under `./ts_benchmark/baselines/pre_train/checkpoints`:
 
-    | **Model** | **Link** |
+    | **TS Pre-trained Model** | **Link** |
     | --- | --- |
     | `Chronos` | [Huggingface](https://huggingface.co/amazon/chronos-bolt-base) |
     | `TimesFM` | [Huggingface](https://huggingface.co/google/timesfm-1.0-200m-pytorch) |
-    <!-- | `Timer` | [Google Drive](https://drive.google.com/drive/folders/15oaiAl4OO5gFqZMJD2lOtX2fxHbpgcU8) | -->
     | `UniTS` | [Github](https://github.com/mims-harvard/UniTS/releases/tag/ckpt) |
-    <!-- | `TinyTimeMixer` | [Huggingface](https://huggingface.co/ibm-research/ttm-research-r2) | -->
     | `Moment` | [Huggingface](https://huggingface.co/AutonLab/MOMENT-1-large) |
-    <!-- | `MOIRAI` | [Huggingface](https://huggingface.co/Salesforce/moirai-1.0-R-base) | -->
+    | Others | [Google Drive](https://drive.google.com/file/d/1uljVaEMqaCGaZt-DF6_CjNLR2mobklWF/view?usp=sharing) |
+    
+    | **LLM-based Model** | **Link** |
+    | --- | --- |
     | `GPT-2` | [Huggingface](https://huggingface.co/openai-community/gpt2) |
 
 3. Some model-specific requirements
